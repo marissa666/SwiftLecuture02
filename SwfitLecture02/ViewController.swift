@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var lbName:UILabel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,6 +19,8 @@ class ViewController: UIViewController {
         var name:String = "Marissa"
         let fullName = name+"Zhang"
         print(fullName)
+        
+        lbName?.text = fullName
     }
 
     override func didReceiveMemoryWarning() {
