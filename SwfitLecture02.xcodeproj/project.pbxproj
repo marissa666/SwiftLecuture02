@@ -74,6 +74,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD531F1721040DDC007AB64A /* LoginFlow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginFlow;
+			sourceTree = "<group>";
+		};
 		ADDCC53E21032C0F00B7F893 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +104,7 @@
 		ADDCC54921032C0F00B7F893 /* SwfitLecture02 */ = {
 			isa = PBXGroup;
 			children = (
+				AD531F1721040DDC007AB64A /* LoginFlow */,
 				ADDCC54A21032C0F00B7F893 /* AppDelegate.swift */,
 				ADDCC54C21032C0F00B7F893 /* ViewController.swift */,
 				ADDCC54E21032C0F00B7F893 /* Main.storyboard */,
