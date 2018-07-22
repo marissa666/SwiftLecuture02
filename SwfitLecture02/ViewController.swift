@@ -21,6 +21,38 @@ class ViewController: UIViewController {
         print(fullName)
         
         lbName?.text = fullName
+        
+        //定义数组
+        var english = ["A","B","C"]
+        var ints:[Int] = [1,2,3]
+        var floats:Array<Float> = Array(repeating: 0, count: 5)
+        
+//        for index in 0..<3{
+//            print("\(english[index])")
+//        }
+//
+//        for str in english{
+//            print(str)
+//        }
+        
+        //Dictionary
+        let dic = [1:"A",2:"B",3:"C"]
+        for (a,b) in dic {
+            print("\(a):\(b)")
+        }
+        
+        let dicSorted = dic.sorted(by: {$0.value<$1.value})
+        for (a,b) in dicSorted{
+            print("\(a):\(b)")
+        }
+        var times:Int = 0
+        //定时器
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (smallerTime) in
+            times += 1
+            print("timer:\(smallerTime.isValid)")
+        
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
